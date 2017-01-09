@@ -10,6 +10,7 @@ import java.util.Calendar;
 import java.util.Scanner;
 import java.time.LocalDate;
 import java.time.Month;
+
 public class Miesiac {
 
     public static Connection polaczenie;
@@ -20,7 +21,9 @@ public class Miesiac {
              * Connecting to database by connecting function.
              */
             polacz();
-            Scanner wczytaj = new Scanner(System.in);
+            String databaseName = new PlatformUtils().determineDatabaseType(dataSource);
+
+        Scanner wczytaj = new Scanner(System.in);
             int wybor;
             /**
              * Chose what to do
