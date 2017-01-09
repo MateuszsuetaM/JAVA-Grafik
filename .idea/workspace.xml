@@ -22,14 +22,14 @@
       <file leaf-file-name="Miesiac.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Miesiac.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="69" column="43" lean-forward="false" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
+            <state relative-caret-position="323">
+              <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
               <folding>
                 <element signature="n#!!doc" expanded="false" />
-                <element signature="e#0#8907#0" expanded="true" />
+                <element signature="e#0#9279#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="method#main#0;class#Miesiac#0" expanded="true" />
                 <element signature="method#polacz#0;class#Miesiac#0" expanded="true" />
+                <element signature="method#dodajMiesiac#0;class#Miesiac#0" expanded="true" />
                 <element signature="method#usunMiesiac#0;class#Miesiac#0" expanded="true" />
                 <element signature="method#wykonajZapytanie#0;class#Miesiac#0" expanded="true" />
                 <element signature="method#wypelnij#0;class#Miesiac#0" expanded="true" />
@@ -37,8 +37,8 @@
                 <element signature="method#pokaz#0;class#Miesiac#0" expanded="true" />
                 <element signature="method#wyswietl#0;class#Miesiac#0" expanded="true" />
                 <element signature="method#pobierzMiesiace#0;class#Miesiac#0" expanded="true" />
-                <marker date="1483712674776" expanded="true" signature="1005:1586" ph="{...}" />
-                <marker date="1483712674776" expanded="false" signature="3097:4457" ph="..." />
+                <marker date="1483951410942" expanded="true" signature="1039:1620" ph="{...}" />
+                <marker date="1483951410942" expanded="false" signature="3133:4493" ph="..." />
               </folding>
             </state>
           </provider>
@@ -74,6 +74,10 @@
       <find>wys</find>
       <find>doda</find>
       <find>podan</find>
+      <find>podany</find>
+      <find>wyswi</find>
+      <find>usun</find>
+      <find>dodaj</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -459,7 +463,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58631414" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9580093" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16485226" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -472,7 +476,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.79160184" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -485,7 +489,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -500,10 +504,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
-            <element signature="e#0#8907#0" expanded="true" />
+            <element signature="e#0#9279#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#Miesiac#0" expanded="true" />
             <element signature="method#polacz#0;class#Miesiac#0" expanded="true" />
+            <element signature="method#dodajMiesiac#0;class#Miesiac#0" expanded="true" />
             <element signature="method#usunMiesiac#0;class#Miesiac#0" expanded="true" />
             <element signature="method#wykonajZapytanie#0;class#Miesiac#0" expanded="true" />
             <element signature="method#wypelnij#0;class#Miesiac#0" expanded="true" />
@@ -511,8 +515,8 @@
             <element signature="method#pokaz#0;class#Miesiac#0" expanded="true" />
             <element signature="method#wyswietl#0;class#Miesiac#0" expanded="true" />
             <element signature="method#pobierzMiesiace#0;class#Miesiac#0" expanded="true" />
-            <marker date="1483712674776" expanded="true" signature="1005:1586" ph="{...}" />
-            <marker date="1483712674776" expanded="false" signature="3097:4457" ph="..." />
+            <marker date="1483951410942" expanded="true" signature="1039:1620" ph="{...}" />
+            <marker date="1483951410942" expanded="false" signature="3133:4493" ph="..." />
           </folding>
         </state>
       </provider>
@@ -533,10 +537,10 @@
           <caret line="41" column="51" lean-forward="false" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
-            <element signature="e#0#8907#0" expanded="true" />
+            <element signature="e#0#9279#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#Miesiac#0" expanded="true" />
             <element signature="method#polacz#0;class#Miesiac#0" expanded="true" />
+            <element signature="method#dodajMiesiac#0;class#Miesiac#0" expanded="true" />
             <element signature="method#usunMiesiac#0;class#Miesiac#0" expanded="true" />
             <element signature="method#wykonajZapytanie#0;class#Miesiac#0" expanded="true" />
             <element signature="method#wypelnij#0;class#Miesiac#0" expanded="true" />
@@ -544,8 +548,8 @@
             <element signature="method#pokaz#0;class#Miesiac#0" expanded="true" />
             <element signature="method#wyswietl#0;class#Miesiac#0" expanded="true" />
             <element signature="method#pobierzMiesiace#0;class#Miesiac#0" expanded="true" />
-            <marker date="1483712674776" expanded="true" signature="1005:1586" ph="{...}" />
-            <marker date="1483712674776" expanded="false" signature="3097:4457" ph="..." />
+            <marker date="1483951410942" expanded="true" signature="1039:1620" ph="{...}" />
+            <marker date="1483951410942" expanded="false" signature="3133:4493" ph="..." />
           </folding>
         </state>
       </provider>
@@ -567,10 +571,10 @@
           <caret line="41" column="51" lean-forward="false" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
-            <element signature="e#0#8907#0" expanded="true" />
+            <element signature="e#0#9279#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#Miesiac#0" expanded="true" />
             <element signature="method#polacz#0;class#Miesiac#0" expanded="true" />
+            <element signature="method#dodajMiesiac#0;class#Miesiac#0" expanded="true" />
             <element signature="method#usunMiesiac#0;class#Miesiac#0" expanded="true" />
             <element signature="method#wykonajZapytanie#0;class#Miesiac#0" expanded="true" />
             <element signature="method#wypelnij#0;class#Miesiac#0" expanded="true" />
@@ -578,8 +582,8 @@
             <element signature="method#pokaz#0;class#Miesiac#0" expanded="true" />
             <element signature="method#wyswietl#0;class#Miesiac#0" expanded="true" />
             <element signature="method#pobierzMiesiace#0;class#Miesiac#0" expanded="true" />
-            <marker date="1483712674776" expanded="true" signature="1005:1586" ph="{...}" />
-            <marker date="1483712674776" expanded="false" signature="3097:4457" ph="..." />
+            <marker date="1483951410942" expanded="true" signature="1039:1620" ph="{...}" />
+            <marker date="1483951410942" expanded="false" signature="3133:4493" ph="..." />
           </folding>
         </state>
       </provider>
@@ -601,10 +605,10 @@
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
-            <element signature="e#0#8907#0" expanded="true" />
+            <element signature="e#0#9279#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#Miesiac#0" expanded="true" />
             <element signature="method#polacz#0;class#Miesiac#0" expanded="true" />
+            <element signature="method#dodajMiesiac#0;class#Miesiac#0" expanded="true" />
             <element signature="method#usunMiesiac#0;class#Miesiac#0" expanded="true" />
             <element signature="method#wykonajZapytanie#0;class#Miesiac#0" expanded="true" />
             <element signature="method#wypelnij#0;class#Miesiac#0" expanded="true" />
@@ -612,8 +616,8 @@
             <element signature="method#pokaz#0;class#Miesiac#0" expanded="true" />
             <element signature="method#wyswietl#0;class#Miesiac#0" expanded="true" />
             <element signature="method#pobierzMiesiace#0;class#Miesiac#0" expanded="true" />
-            <marker date="1483712674776" expanded="true" signature="1005:1586" ph="{...}" />
-            <marker date="1483712674776" expanded="false" signature="3097:4457" ph="..." />
+            <marker date="1483951410942" expanded="true" signature="1039:1620" ph="{...}" />
+            <marker date="1483951410942" expanded="false" signature="3133:4493" ph="..." />
           </folding>
         </state>
       </provider>
@@ -635,10 +639,10 @@
           <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
-            <element signature="e#0#8907#0" expanded="true" />
+            <element signature="e#0#9279#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#Miesiac#0" expanded="true" />
             <element signature="method#polacz#0;class#Miesiac#0" expanded="true" />
+            <element signature="method#dodajMiesiac#0;class#Miesiac#0" expanded="true" />
             <element signature="method#usunMiesiac#0;class#Miesiac#0" expanded="true" />
             <element signature="method#wykonajZapytanie#0;class#Miesiac#0" expanded="true" />
             <element signature="method#wypelnij#0;class#Miesiac#0" expanded="true" />
@@ -646,8 +650,8 @@
             <element signature="method#pokaz#0;class#Miesiac#0" expanded="true" />
             <element signature="method#wyswietl#0;class#Miesiac#0" expanded="true" />
             <element signature="method#pobierzMiesiace#0;class#Miesiac#0" expanded="true" />
-            <marker date="1483712674776" expanded="true" signature="1005:1586" ph="{...}" />
-            <marker date="1483712674776" expanded="false" signature="3097:4457" ph="..." />
+            <marker date="1483951410942" expanded="true" signature="1039:1620" ph="{...}" />
+            <marker date="1483951410942" expanded="false" signature="3133:4493" ph="..." />
           </folding>
         </state>
       </provider>
@@ -666,14 +670,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Miesiac.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="69" column="43" lean-forward="false" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
+        <state relative-caret-position="323">
+          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
-            <element signature="e#0#8907#0" expanded="true" />
+            <element signature="e#0#9279#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#Miesiac#0" expanded="true" />
             <element signature="method#polacz#0;class#Miesiac#0" expanded="true" />
+            <element signature="method#dodajMiesiac#0;class#Miesiac#0" expanded="true" />
             <element signature="method#usunMiesiac#0;class#Miesiac#0" expanded="true" />
             <element signature="method#wykonajZapytanie#0;class#Miesiac#0" expanded="true" />
             <element signature="method#wypelnij#0;class#Miesiac#0" expanded="true" />
@@ -681,8 +685,8 @@
             <element signature="method#pokaz#0;class#Miesiac#0" expanded="true" />
             <element signature="method#wyswietl#0;class#Miesiac#0" expanded="true" />
             <element signature="method#pobierzMiesiace#0;class#Miesiac#0" expanded="true" />
-            <marker date="1483712674776" expanded="true" signature="1005:1586" ph="{...}" />
-            <marker date="1483712674776" expanded="false" signature="3097:4457" ph="..." />
+            <marker date="1483951410942" expanded="true" signature="1039:1620" ph="{...}" />
+            <marker date="1483951410942" expanded="false" signature="3133:4493" ph="..." />
           </folding>
         </state>
       </provider>

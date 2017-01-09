@@ -5,6 +5,8 @@
 //import org.sqlite.jdbc3.JDBC3PreparedStatement;
 
 import java.sql.*;
+import java.util.Date;
+import java.util.Calendar;
 import java.util.Scanner;
 import java.time.LocalDate;
 import java.time.Month;
@@ -21,7 +23,7 @@ public class Miesiac {
             Scanner wczytaj = new Scanner(System.in);
             int wybor;
             /**
-             * Choose action in switch function
+             * Chose what to do
              */
             do{
                 System.out.println("Wybierz jaka operacje chcesz wykonac:\n1. Dodac nowy miesiac\n" +
@@ -55,7 +57,7 @@ public class Miesiac {
 
     public static void polacz() throws SQLException {
         try {
-            Class.forName("org.sqlite.JDBC");
+//            Class.forName("org.sqlite.JDBC");
             polaczenie = DriverManager.getConnection("jdbc:sqlite:godziny.db");
             stmt = polaczenie.createStatement();
             System.out.println("Polaczono");
@@ -133,19 +135,18 @@ public class Miesiac {
                 System.out.println(nowyMiesiac);
                 wykonajZapytanie(nowyMiesiac);
                 wypelnij(miesiac, month, rok);
-//                pokaz(stmt, wczytaj, polaczenie);
             }
 
         }
     }
     public static void usunMiesiac(Scanner wczytaj) throws SQLException{
-        pokaz(stmt, wczytaj, polaczenie);
+        pobierzMiesiace(stmt, wczytaj, polaczenie);
         System.out.println("Wpisz nazwe miesiaca do usuniecia.");
         String miesiac = wczytaj.next();
         String sql = "DROP TABLE "+miesiac+";";
         wykonajZapytanie(sql);
-        pokaz(stmt, wczytaj, polaczenie);
-    }
+        pobierzMiesiace(stmt, wczytaj, polaczenie);
+        }
     public static void wykonajZapytanie(String sql){
         try{
             stmt.executeUpdate(sql);
@@ -156,11 +157,22 @@ public class Miesiac {
         }
     }
     public static void wypelnij(int intMiesiac, String miesiac, int rok) throws SQLException{
-        Month msc = Month.from(LocalDate.of(rok, intMiesiac, 1));
+
+        //how many days is in current month
+
+        Month msc = Month.from(LocalDate.of(rok, intMiesiac, 11));
         int dlugosc = msc.maxLength();
-        System.out.println("Podany miesiac ma "+dlugosc+" dni");
+        if(rok%4!=0)
+            dlugosc--;
+                //maxLength();
+
+
+//        Month misc = Month.from(LocalDate.ofYearDay())
+
+
+        System.out.println("Podany miesiac ma "+dlugosc+" dni\nrok: "+rok+"\nmiesiac: "+intMiesiac);
         String sql = "INSERT INTO "+miesiac+rok+"(dzien) values";
-        while(dlugosc>1){
+        while(dlugosc>=1){
             sql +="("+dlugosc+")";
 //                    if(dlugosc==1)
 //                        sql+=";";
@@ -176,7 +188,7 @@ public class Miesiac {
 
     public static void dodajGodziny(Scanner wczytaj) throws SQLException {
         pobierzMiesiace(stmt, wczytaj, polaczenie);
-        System.out.println("Wpisz nazwe miesiaca, w którym chcesz dodać godziny");
+        System.out.println("Wpisz nazwe miesiaca, w którym chcesz dodać godziny.");
         String miesiac = wczytaj.next();
         String sql = "SELECT * FROM "+miesiac+";";
         try{
@@ -185,12 +197,17 @@ public class Miesiac {
         catch (Exception e){
             System.err.println("Podałeś złą nazwę miesiąca.\n"+e);
         }
-        System.out.println("Wpisz numer dnia, w którym chciałbyś dodać wartość.");
-        int dzien = wczytaj.nextInt();
-        System.out.println("Wpisz ilość godzin jaką chcesz dodać.");
-        int godziny = wczytaj.nextInt();
-        String dodajSql = "UPDATE "+miesiac+" SET ILOSC = "+godziny+" WHERE DZIEN = "+dzien+";";
-        wykonajZapytanie(dodajSql);
+        int dzien=1;
+        while(dzien!=0) {
+            System.out.println("Wpisz numer dnia, w którym chciałbyś dodać wartość.");
+            dzien=wczytaj.nextInt();
+                if(dzien==0)
+                    break;
+            System.out.println("Wpisz ilość godzin jaką chcesz dodać.");
+            int godziny = wczytaj.nextInt();
+            String dodajSql = "UPDATE " + miesiac + " SET ILOSC = " + godziny + " WHERE DZIEN = " + dzien + ";";
+            wykonajZapytanie(dodajSql);
+        }
         System.out.println("Tak wyglada miesiąc po aktualizacji:");
         wyswietl(sql);
         }
