@@ -21,7 +21,7 @@ public class Miesiac {
              * Connecting to database by connecting function.
              */
             polacz();
-            String databaseName = new PlatformUtils().determineDatabaseType(dataSource);
+//            String databaseName = new PlatformUtils().determineDatabaseType(dataSource);
 
         Scanner wczytaj = new Scanner(System.in);
             int wybor;
@@ -235,11 +235,15 @@ public class Miesiac {
     static void wyswietl(String sql){
         try{
         ResultSet wynik = stmt.executeQuery(sql);
+        int suma = 0;
         while (wynik.next()) {
             int dzien = wynik.getInt("dzien");
             int ilosc = wynik.getInt("ilosc");
             System.out.println(dzien + ". " + ilosc);
-        }}
+            suma+=ilosc;
+        }
+            System.out.println("Suma godzin: "+suma);
+        }
         catch (Exception e){
             System.out.println("Nie można wyświetlić zawartości bazy.\n"+e);
         }
