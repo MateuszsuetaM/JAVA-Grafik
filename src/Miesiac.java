@@ -202,7 +202,7 @@ public class Miesiac {
         }
         int dzien=1;
         while(dzien!=0) {
-            System.out.println("Wpisz numer dnia, w którym chciałbyś dodać wartość.");
+            System.out.println("Wpisz numer dnia, w którym chciałbyś dodać wartość. Wyjście - wpisz 0");
             dzien=wczytaj.nextInt();
                 if(dzien==0)
                     break;
