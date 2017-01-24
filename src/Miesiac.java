@@ -60,7 +60,7 @@ public class Miesiac {
 
     public static void polacz() throws SQLException {
         try {
-//            Class.forName("org.sqlite.JDBC");
+            Class.forName("org.sqlite.JDBC");
             polaczenie = DriverManager.getConnection("jdbc:sqlite:godziny.db");
             stmt = polaczenie.createStatement();
             System.out.println("Polaczono");
